@@ -8,7 +8,7 @@ namespace Portafolio.Controllers
     {
         public IActionResult Index()
         {
-            return View("Patata");
+            return View();
         }
 
         public IActionResult Privacy()

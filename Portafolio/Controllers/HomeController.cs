@@ -8,6 +8,8 @@ namespace Portafolio.Controllers
     {
         public IActionResult Index()
         {
+            ViewBag.Nombre = "Fortunata";
+            ViewBag.Edad = 99;
             return View();
         }
 

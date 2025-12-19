@@ -8,11 +8,8 @@ namespace Portafolio.Controllers
     {
         public IActionResult Index()
         {
-            var persona = new Persona()
-            {
-                Nombre = "Jacinta",
-                Edad = 9,
-            };
+            var persona = new Persona("Pepe Gotera", 54);
+
             //ViewBag.Nombre = "Fortunata";
             //ViewBag.Edad = 99;
             //return View("Index", "Elsa Pato");

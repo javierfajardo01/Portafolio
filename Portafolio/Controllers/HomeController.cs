@@ -11,7 +11,7 @@ namespace Portafolio.Controllers
             var persona = new Persona()
             {
                 Nombre = "Jacinta",
-                Edad = 99,
+                Edad = 9,
             };
             //ViewBag.Nombre = "Fortunata";
             //ViewBag.Edad = 99;

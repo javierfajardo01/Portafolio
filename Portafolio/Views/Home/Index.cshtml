@@ -1,4 +1,4 @@
-﻿@model String;
+﻿@model Persona;
 
 @{
     ViewData["Title"] = "Home Page";
@@ -7,7 +7,7 @@
 <div class="text-center">
     <h1 class="display-4">Mclaren F1 Mechanic</h1>
     @* <h2>Soy un mecánico para @ViewBag.Nombre (@ViewBag.Edad)</h2> *@
-    <h2>Soy un mecánico para @Model (@ViewBag.Edad)</h2>
+    <h2>Soy un mecánico para @Model.Nombre (@Model.Edad)</h2>
     @* Inserto una foto *@
     <img class="img w-25 img-thumbnail mx-4 rounded-circle" src="~/img/profile.jpg" alt="MecanicoF1" />
     <p class="align-content-center">Soy mecánico especializado en automovilismo de alto rendimiento, con experiencia en equipos de Fórmula 1

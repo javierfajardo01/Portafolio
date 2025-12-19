@@ -10,7 +10,7 @@ namespace Portafolio.Controllers
         {
             ViewBag.Nombre = "Fortunata";
             ViewBag.Edad = 99;
-            return View();
+            return View("Index", "Elsa Pato");
         }
 
         public IActionResult Privacy()

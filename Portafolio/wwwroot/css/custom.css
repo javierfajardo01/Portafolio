@@ -1,4 +1,19 @@
-﻿img {
+﻿.img {
     margin: 2pc;
-    height:250px;
+    height:300px;
+}
+
+.div-bienvenida {
+    margin: 5rem 0 10rem 0;
+    color: white;
+}
+
+.div-bienvenida h2 {
+    margin-bottom: 1rem;
+}
+
+.div-bienvenida p {
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    font-size: 1.25rem;
 }

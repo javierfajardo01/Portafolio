@@ -1,7 +1,7 @@
 ﻿@model Persona;
 
 @{
-    ViewData["Title"] = "Ejercicio de Clase Portafolio";
+    ViewData["Title"] = "Ejercicio7 de Clase Portafolio";
     DateTime hoy = DateTime.Now;
     var nombres = new List<string>() { "Felipe", "Rigoberto", "Eustaquio", "Casilda", "Carlos" };
 }
@@ -9,7 +9,7 @@
 <div class="text-center">
     <h1 class="display-4">Mclaren F1 Mechanic</h1>
     @* <h2>Soy un mecánico para @ViewBag.Nombre (@ViewBag.Edad)</h2> *@
-    <h2>Soy un mecánico para @Model.Nombre.ToUpper() (@Model.Edad)</h2>
+    <h2>Soy el mecánico @Model.Nombre.ToUpper() (@Model.Edad)</h2>
     <h2 class="border border-2 border-info">@hoy.ToString("dd/MM/yyyy HH:mm")</h2>
 
     @* Inserto una foto *@

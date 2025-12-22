@@ -26,3 +26,25 @@
 .div__img-csharp {
     width:500px;
 }
+
+/*Estilos para las cabeceras de las columnas de habilidades*/
+.div__p-cabecera {
+    font-weight:bold;
+}
+
+/*Contenedor de la seccion habilidades*/
+.div__contenedorHabilidades {
+    margin-top: -150px;
+}
+
+/*Estilos para columna back*/
+.div__div--back {
+    border-radius: 15px 0 0 15px;
+    box-shadow: 0 5px 5px 0 gray;
+}
+
+/*Estilos para columna front */
+.div__div--front {
+    border-radius: 0 15px 15px 0;
+    box-shadow: 0 5px 5px 0 gray;
+}

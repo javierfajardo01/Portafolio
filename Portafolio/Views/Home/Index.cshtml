@@ -15,7 +15,7 @@
     @* Inserto una foto *@
     <img class="img w-25 img-thumbnail mx-4 rounded-circle" src="~/img/profile.jpg" alt="MecanicoF1" />
     @* Párrafo *@
-    @if (Model.Edad >= 18)
+    @* @if (Model.Edad >= 18)
     {
         <p class="align-content-center">
             Soy mecánico especializado en automovilismo de alto rendimiento, con experiencia en equipos de Fórmula 1
@@ -27,10 +27,11 @@
             procesos mecánicos y aportar valor en equipos que buscan excelencia. Apasionado por la ingeniería y la velocidad,
             combino conocimiento técnico con compromiso absoluto hacia la competición.
         </p>
-    } else
+    }
+    else
     {
         <p>No se puede visualizar el párrafo porque la edad es menor a 18</p>
-    }
+    } *@
     @* Creamos una lista junto con un bucle foreach() (Prueba)*@
     @* <ul>
         @foreach (var nombre in nombres)
@@ -50,12 +51,59 @@
     @* Creamos dos columnas con texto sobre mis habilidades y una clase propia para estilos *@
     <div class="col col-md-7 div-bienvenida">
         <h2>Te doy la bienvenida a mi portafolio</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sem facilisis, aliquam potenti 
-            aptent augue parturient lobortis in mi, convallis lectus sociis vehicula id luctus justo
-            venenatis. Rhoncus venenatis vulputate mattis convallis faucibus inceptos fames justo 
-            enim praesent, sollicitudin cras tristique integer at odio cursus ultrices taciti. 
-            Cum maecenas nunc nostra orci condimentum nisi massa, lacinia curae mattis auctor per 
-            arcu potenti augue, ultricies dictum morbi facilisi consequat sem.
+        <p>
+            Soy mecánico especializado en automovilismo de alto rendimiento, con experiencia en equipos de Fórmula 1
+            donde la precisión y la rapidez son esenciales. Mi trayectoria incluye el mantenimiento integral de monoplazas,
+            optimización de sistemas de suspensión, frenos y motores bajo condiciones extremas. Trabajo en entornos de alta presión,
+            garantizando la seguridad y el máximo rendimiento en cada carrera. Me destaco por mi capacidad de diagnóstico técnico,
+            resolución de problemas y coordinación con ingenieros y pilotos. He participado en múltiples temporadas,
+            contribuyendo al éxito competitivo mediante innovación y disciplina. Mi objetivo es seguir perfeccionando
+            procesos mecánicos y aportar valor en equipos que buscan excelencia. Apasionado por la ingeniería y la velocidad,
+            combino conocimiento técnico con compromiso absoluto hacia la competición.
         </p>
     </div>
 </div>
+
+<div class="div__contenedorHabilidades">
+
+    @* Seccion para describir nuestras habilidades *@
+    <div class="row justify-content-md-center text-center">
+        @* backend *@
+        <div class="col col-3 bg-white div__div--back">
+            <h3>Back-End</h3>
+            <p>Trabajo desde el desarrollo, pruebas automáticas y puesta en producción con entrega continua</p>
+            <p class="text-primary div__p-cabecera">Stack:</p>
+            <p>ASP.NET Core, SQL Server</p>
+            <p class="text-primary div__p-cabecera">Experiencia:</p>
+            @* Lista con lenguajes en los que tengo experiencia *@
+            <ul>
+                <li>Web APIs</li>
+                <li>ASP.NET Core MVC</li>
+                <li>Entity Framework Core</li>
+                <li>Blazor</li>
+                <li>Dapper</li>
+                <li>Queries especiales</li>
+                <li>Principios SOLID</li>
+            </ul>
+        </div>
+        @* frontend *@
+        <div class="col col-3 bg-white div__div--front">
+            <h3>Front-End</h3>
+            <p>Puedo crear front-ends robustos, los cuales cumplen con los requerimientos del negocio</p>
+            <p class="text-primary div__p-cabecera">Stack:</p>
+            <p>React, Angular, Blazor</p>
+            <p class="text-primary div__p-cabecera">Experiencia:</p>
+            @* Lista con lenguajes en los que tengo experiencia *@
+            <ul>
+                <li>React Hbooks</li>
+                <li>Angular Material</li>
+                <li>Blazor WASM</li>
+                <li>JQuery</li>
+                <li>Pruebas Automáticas</li>
+                <li>Leaflet</li>
+                <li>Markdown</li>
+            </ul>
+        </div>
+    </div>
+</div>
+

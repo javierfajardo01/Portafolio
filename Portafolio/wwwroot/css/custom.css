@@ -17,3 +17,8 @@
     line-height: 1.5;
     font-size: 1.25rem;
 }
+
+/*Estilos para la imagen del logo */
+.div__img-dotnet {
+    width:500px;
+}

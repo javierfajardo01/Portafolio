@@ -48,3 +48,25 @@
     border-radius: 0 15px 15px 0;
     box-shadow: 0 5px 5px 0 gray;
 }
+
+/*Estilos para las cabeceras de las columnas de habilidades Ejercicio8*/
+.div__p-cabeceraEj8 {
+    font-weight: bold;
+}
+
+/*Contenedor de la seccion habilidades Ejercicio8*/
+.div__contenedorHabilidadesEj8 {
+    margin-top: -150px;
+}
+
+/*Estilos para columna back Ejercicio8*/
+.div__div--backEj8 {
+    border-radius: 15px 0 0 15px;
+    box-shadow: 0 5px 5px 0 gray;
+}
+
+/*Estilos para columna front Ejercicio8*/
+.div__div--frontEj8 {
+    border-radius: 0 15px 15px 0;
+    box-shadow: 0 5px 5px 0 gray;
+}

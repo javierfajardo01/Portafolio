@@ -23,6 +23,13 @@ namespace Portafolio.Controllers
             return View(persona);
         }
 
+        public IActionResult Ejercicio8()
+        {
+            var persona = new Persona("Jonh Portfolio", 23);
+
+            return View(persona);
+        }
+
         public IActionResult Privacy()
         {
             return View();

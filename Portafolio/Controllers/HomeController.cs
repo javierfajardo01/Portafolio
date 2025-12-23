@@ -15,7 +15,7 @@ namespace Portafolio.Controllers
             //return View("Index", "Elsa Pato");
             var proyectos = ObtenerProyectos().Take(3).ToList();
             var modelo = new HomeIndexDTO() { Proyectos = proyectos };
-            return View();
+            return View(modelo);
         }
 
         //Funcion para mostrar los proyectos

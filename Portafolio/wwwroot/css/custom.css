@@ -85,3 +85,8 @@
     /*Estipulo el tamaño de la fuente.*/
     font-size: 50px;
 }
+
+/*Estilos para descripcion de proyectos*/
+.div--desc-proyectos {
+    padding-top: 6rem;
+}

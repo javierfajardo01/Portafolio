@@ -70,3 +70,11 @@
     border-radius: 0 15px 15px 0;
     box-shadow: 0 5px 5px 0 gray;
 }
+
+/*Estilos para la lista desordenada de las habilidades.*/
+.div__contenedorHabilidades ul {
+    /*Elimino los estilos por defecto de la lista*/
+    list-style: none;
+    /*Elimino el margen interno izquierdo*/
+    padding-left: 0;
+}

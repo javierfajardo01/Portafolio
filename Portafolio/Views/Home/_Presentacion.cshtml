@@ -1,10 +1,9 @@
-﻿@model Persona;
-
-@{
+﻿@{
     ViewData["Title"] = "Ejercicio de Clase Portafolio";
     DateTime hoy = DateTime.Now;
     var nombres = new List<string>() { "Felipe", "Rigoberto", "Eustaquio", "Casilda", "Carlos" };
 }
+
 
 <div class="text-center">
     <h1 class="display-4">Mclaren F1 Mechanic</h1>
@@ -63,53 +62,3 @@
         </p>
     </div>
 </div>
-
-@* Vista Parcial con el contenido de presentacion*@
-<partial name="_Presentacion" />
-
-<div class="div__contenedorHabilidades">
-
-    @* Seccion para describir nuestras habilidades *@
-    <div class="row justify-content-md-center text-center">
-        @* backend *@
-        <div class="col col-3 bg-white div__div--back">
-            <i class="bi bi-hdd-fill"></i>
-            <h3>Back-End</h3>
-            <p>Trabajo desde el desarrollo, pruebas automáticas y puesta en producción con entrega continua</p>
-            <p class="text-primary div__p-cabecera">Stack:</p>
-            <p>ASP.NET Core, SQL Server</p>
-            <p class="text-primary div__p-cabecera">Experiencia:</p>
-            @* Lista con lenguajes en los que tengo experiencia *@
-            <ul>
-                <li>Web APIs</li>
-                <li>ASP.NET Core MVC</li>
-                <li>Entity Framework Core</li>
-                <li>Blazor</li>
-                <li>Dapper</li>
-                <li>Queries especiales</li>
-                <li>Principios SOLID</li>
-            </ul>
-        </div>
-        @* frontend *@
-        <div class="col col-3 bg-white div__div--front">
-            <i class="bi bi-display"></i>
-            <h3>Front-End</h3>
-            <p>Puedo crear front-ends robustos, los cuales cumplen con los requerimientos del negocio</p>
-            <p class="text-primary div__p-cabecera">Stack:</p>
-            <p>React, Angular, Blazor</p>
-            <p class="text-primary div__p-cabecera">Experiencia:</p>
-            @* Lista con lenguajes en los que tengo experiencia *@
-            <ul>
-                <li>React Hbooks</li>
-                <li>Angular Material</li>
-                <li>Blazor WASM</li>
-                <li>JQuery</li>
-                <li>Pruebas Automáticas</li>
-                <li>Leaflet</li>
-                @* Iconos con bootstrap *@
-                <li>Markdown <i class="bi bi-sunset bg-danger"></i></li>
-            </ul>
-        </div>
-    </div>
-</div>
-

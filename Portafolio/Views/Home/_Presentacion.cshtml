@@ -3,7 +3,7 @@
     DateTime hoy = DateTime.Now;
     var nombres = new List<string>() { "Felipe", "Rigoberto", "Eustaquio", "Casilda", "Carlos" };
 }
-
+ @* Esto es una vista Parcial que podemos insertar en el Index con la etiqueta <partial/> *@
 
 <div class="text-center">
     <h1 class="display-4">Mclaren F1 Mechanic</h1>
@@ -13,31 +13,6 @@
 
     @* Inserto una foto *@
     <img class="img w-25 img-thumbnail mx-4 rounded-circle" src="~/img/profile.jpg" alt="MecanicoF1" />
-    @* Párrafo *@
-    @* @if (Model.Edad >= 18)
-    {
-        <p class="align-content-center">
-            Soy mecánico especializado en automovilismo de alto rendimiento, con experiencia en equipos de Fórmula 1
-            donde la precisión y la rapidez son esenciales. Mi trayectoria incluye el mantenimiento integral de monoplazas,
-            optimización de sistemas de suspensión, frenos y motores bajo condiciones extremas. Trabajo en entornos de alta presión,
-            garantizando la seguridad y el máximo rendimiento en cada carrera. Me destaco por mi capacidad de diagnóstico técnico,
-            resolución de problemas y coordinación con ingenieros y pilotos. He participado en múltiples temporadas,
-            contribuyendo al éxito competitivo mediante innovación y disciplina. Mi objetivo es seguir perfeccionando
-            procesos mecánicos y aportar valor en equipos que buscan excelencia. Apasionado por la ingeniería y la velocidad,
-            combino conocimiento técnico con compromiso absoluto hacia la competición.
-        </p>
-    }
-    else
-    {
-        <p>No se puede visualizar el párrafo porque la edad es menor a 18</p>
-    } *@
-    @* Creamos una lista junto con un bucle foreach() (Prueba)*@
-    @* <ul>
-        @foreach (var nombre in nombres)
-        {
-            <li>@nombre</li>
-        }
-    </ul> *@
 </div>
 @* Logo de .NET *@
 <div class="text-center">

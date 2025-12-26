@@ -24,7 +24,8 @@ namespace Portafolio.Controllers
                     Titulo = "ProyectoMigracion",
                     Descripcion = "Página para consultar las últimas novedades de la Fórmula1 y comprar merchandising oficial",
                     Link = "https://github.com/javierfajardo01/Portafolio.git",
-                    ImagenURL = "/img/GitHub-Logo.png"},
+                    ImagenURL = "/img/GitHub-Logo.png"
+                },
                 new ProyectoDTO
                 {
                     Titulo = "ProyectoWebAzure",

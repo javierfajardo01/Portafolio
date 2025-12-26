@@ -6,7 +6,7 @@ namespace Portafolio.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly RepositorioProyectos repositorioProyectos;
+        private readonly IRepositorioProyectos repositorioProyectos;
 
         public HomeController(RepositorioProyectos repositorioProyectos)
         {

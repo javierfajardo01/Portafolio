@@ -1,0 +1,33 @@
+﻿@* Compruebo que el modelo no sea nulo *@
+@if (Model.Proyectos is not null)
+{
+    <div class="text-center div--desc-proyectos">
+        <h1>Mis trabajos recientes</h1>
+        <p>Aquí puedes ver algunos de mis trabajos mas recientes</p>
+    </div>
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-3">
+            @* Imprimo cada proyecto *@
+            @foreach (var proyecto in Model.Proyectos)
+            {
+                <div class="col">
+                    @* Utiizo una clase propia para dar forma de tarjeta *@
+                    <div class="card h-100">
+                        @* Inserto la imagen *@
+                        <img src="@proyecto.ImagenURL" class="card-img-top" alt="Imagen Proyecto" />
+                        @* Inserto el titulo *@
+                        <div class="card-body">
+                            <h5 class="card-title">@proyecto.Titulo</h5>
+                            @* Descripcion del proyecto *@
+                            <p class="card-text">@proyecto.Descripcion</p>
+                        </div>
+                        <div class="card-footer">
+                            @* Boton para ir a la pagina *@
+                            <a class="btn btn-primary" href="@proyecto.Link" target="_blank" rel="noreferrer noopener">Visitar</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+}

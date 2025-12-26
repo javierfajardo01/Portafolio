@@ -22,14 +22,14 @@ namespace Portafolio.Controllers
                 new ProyectoDTO
                 {
                     Titulo = "ProyectoMigracion",
-                    Descripcion = "Página para consultar las últimas novedades de la Fórmula1 y comprar merchandising oficial",
+                    Descripcion = "Página para consultar los avances en el proyecto de migración de TIBCO a Java Sringboot",
                     Link = "https://github.com/javierfajardo01/Portafolio.git",
                     ImagenURL = "/img/GitHub-Logo.png"
                 },
                 new ProyectoDTO
                 {
                     Titulo = "ProyectoWebAzure",
-                    Descripcion = "Página para consultar las últimas novedades de la Fórmula1 y comprar merchandising oficial",
+                    Descripcion = "Página para consultar los proyectos de Azure de los últimos cursos",
                     Link = "https://github.com/javierfajardo01/Portafolio.git",
                     ImagenURL = "/img/GitLab.png"},
             };

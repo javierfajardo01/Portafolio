@@ -13,36 +13,13 @@ namespace Portafolio.Controllers
             //ViewBag.Nombre = "Fortunata";
             //ViewBag.Edad = 99;
             //return View("Index", "Elsa Pato");
-            var proyectos = ObtenerProyectos().Take(3).ToList();
+
+            //Instancio la clase RepositorioProyectos y llamo al metodo ObtenerProyectos
+            RepositorioProyectos repositorioProyectos = new RepositorioProyectos();
+            var proyectos = repositorioProyectos.ObtenerProyectos().Take(3).ToList();
+            //DTO: Data Transfer Object
             var modelo = new HomeIndexDTO() { Proyectos = proyectos };
             return View(modelo);
-        }
-
-        //Funcion para mostrar los proyectos
-        private List<ProyectoDTO> ObtenerProyectos()
-        {
-            return new List<ProyectoDTO>() 
-            {
-                new ProyectoDTO
-                {
-                    Titulo = "ProyectoWebF1",
-                    Descripcion = "Página para consultar las últimas novedades de la Fórmula1 y comprar merchandising oficial",
-                    Link = "https://github.com/javierfajardo01/Portafolio.git",
-                    ImagenURL = "/img/GitHub-Logo.png"
-                },
-                new ProyectoDTO
-                {
-                    Titulo = "ProyectoMigracion",
-                    Descripcion = "Página para consultar las últimas novedades de la Fórmula1 y comprar merchandising oficial",
-                    Link = "https://github.com/javierfajardo01/Portafolio.git",
-                    ImagenURL = "/img/GitHub-Logo.png"},
-                new ProyectoDTO
-                {
-                    Titulo = "ProyectoWebAzure",
-                    Descripcion = "Página para consultar las últimas novedades de la Fórmula1 y comprar merchandising oficial",
-                    Link = "https://github.com/javierfajardo01/Portafolio.git",
-                    ImagenURL = "/img/GitLab.png"},
-            };
         }
 
         public IActionResult Ejercicio7()

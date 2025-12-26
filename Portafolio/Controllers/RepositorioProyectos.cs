@@ -6,7 +6,7 @@ namespace Portafolio.Controllers
     // en este caso, mandaremos informacion entre las distintas partes de nuestro proyecto.
     public class RepositorioProyectos
     {
-        //Funcion para mostrar los proyectos (tenemos que ponerlo public para p
+        //Funcion para mostrar los proyectos (tenemos que ponerlo public para
         //poder acceder al método desde fuera de la clase)
         public List<ProyectoDTO> ObtenerProyectos()
         {

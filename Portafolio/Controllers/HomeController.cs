@@ -23,7 +23,6 @@ namespace Portafolio.Controllers
 
             //Utilizando la inyeccion de dependencias, podemos llamar a la clase RepositorioProyectos
 
-
             //Instancio la clase RepositorioProyectos y llamo al metodo ObtenerProyectos
             //RepositorioProyectos repositorioProyectos = new RepositorioProyectos();
             var proyectos = repositorioProyectos.ObtenerProyectos().Take(3).ToList();

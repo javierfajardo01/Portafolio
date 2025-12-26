@@ -2,9 +2,15 @@
 
 namespace Portafolio.Controllers
 {
+    //Usamos una interfaz para servirnos de plantilla para luego implementarla.
+    public interface IRepositorioProyectos
+    {
+        List<ProyectoDTO> ObtenerProyectos();
+    }
+
     //Normalmente esta clase se utiliza para realizar conexiones con la BD, 
     // en este caso, mandaremos informacion entre las distintas partes de nuestro proyecto.
-    public class RepositorioProyectos
+    public class RepositorioProyectos : IRepositorioProyectos
     {
         //Funcion para mostrar los proyectos (tenemos que ponerlo public para
         //poder acceder al método desde fuera de la clase)

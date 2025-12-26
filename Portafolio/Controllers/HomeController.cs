@@ -14,6 +14,9 @@ namespace Portafolio.Controllers
             //ViewBag.Edad = 99;
             //return View("Index", "Elsa Pato");
 
+            //Utilizando la inyeccion de dependencias, podemos llamar a la clase RepositorioProyectos
+            //
+
             //Instancio la clase RepositorioProyectos y llamo al metodo ObtenerProyectos
             RepositorioProyectos repositorioProyectos = new RepositorioProyectos();
             var proyectos = repositorioProyectos.ObtenerProyectos().Take(3).ToList();
@@ -24,7 +27,7 @@ namespace Portafolio.Controllers
 
         public IActionResult Ejercicio7()
         {
-            var persona = new Persona("Jonh Portfolio", 23);
+            var persona = new Persona("John Portfolio", 23);
 
             return View(persona);
         }

@@ -6,10 +6,11 @@ namespace Portafolio.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly RepositorioProyectos repositorioProyectos;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(RepositorioProyectos repositorioProyectos)
         {
-            _logger = logger;
+            this.repositorioProyectos = repositorioProyectos;
         }
 
         public IActionResult Index()
@@ -21,10 +22,10 @@ namespace Portafolio.Controllers
             //return View("Index", "Elsa Pato");
 
             //Utilizando la inyeccion de dependencias, podemos llamar a la clase RepositorioProyectos
-            //
+
 
             //Instancio la clase RepositorioProyectos y llamo al metodo ObtenerProyectos
-            RepositorioProyectos repositorioProyectos = new RepositorioProyectos();
+            //RepositorioProyectos repositorioProyectos = new RepositorioProyectos();
             var proyectos = repositorioProyectos.ObtenerProyectos().Take(3).ToList();
             //DTO: Data Transfer Object
             var modelo = new HomeIndexDTO() { Proyectos = proyectos };
